@@ -1,0 +1,212 @@
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+
+  /* --- Login estilo --- */
+  .login__container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(auto, 320px);
+    padding: 64px 16px;
+    min-height: calc(100vh - 60px);
+    height: 100%;
+    background: var(--ColorBlackPrincipal);
+  }
+  .login {
+    max-height: 500px;
+    width: 100%;
+    background: transparent;
+    box-shadow: 0 0 0 1px rgb(0, 1, 7);
+  }
+  .login__content {
+    height: 100%;
+    padding: 32px 16px;
+  }
+  .login__title {
+    font-family: var(--Fuente2);
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 80px;
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-group__input {
+    display: block;
+    width: 100%;
+    padding: 20px 12px;
+    font-size: 1rem;
+    line-height: 1;
+    transition: 0.2s border-color;
+    background-clip: padding-box;
+    border: 0;
+    outline: none;
+    border: 1px solid var(--ColorGray);
+    border-radius: .25rem;
+    font-family: var(--Fuente1);
+    color: rgb(10, 2, 2);
+    background-color: var(--ColorBlackSecundary);
+  }
+  .form-group__input:focus, .form-group__input:not(:placeholder-shown), .form-group__input:-webkit-autofill {
+    padding-top: 1.62rem;
+    padding-bottom: 0.87rem;
+    border: 1px solid rgb(15, 7, 7);
+  }
+  .form-group__input:focus::placeholder, .form-group__input:not(:placeholder-shown)::placeholder, .form-group__input:-webkit-autofill::placeholder {
+    color: transparent;
+  }
+  .form-group__input:focus + label, .form-group__input:not(:placeholder-shown) + label, .form-group__input:-webkit-autofill + label {
+    opacity: 1;
+  }
+  .form-group__label {
+    position: absolute;
+    top: 0.25rem;
+    left: 0.75rem;
+    z-index: 1;
+    cursor: text;
+    pointer-events: none;
+    color: rgb(12, 4, 4);
+    font-size: 12px;
+    transition: all 0.1s ease-in-out;
+    opacity: 0;
+  }
+  .form-group__labelCheck {
+    font-size: 14px;
+    color: rgb(15, 10, 10);
+  }
+  .actions .btn-login{
+    display: block;
+    width: 100%;
+    background: var(--ColorRed);
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: .25rem;
+  }
+  .actions a {
+    color: rgb(10, 3, 3);
+    text-align: center;
+    text-decoration: none;
+  }
+  .actions span {
+    font-size: 14px;
+    color: rgb(8, 3, 3);
+  }
+  .actions span a {
+    margin-left: 8px;
+    color: var(--ColorRed);
+    text-decoration: underline;
+  }
+  
+
+  .grid_footer {
+    background-color: black;
+    color: white;
+    grid-column: 1 / span 3;
+    text-align: right;
+    margin: 5px;
+    padding: 25px;
+}
+
+  /*header style*/
+
+  .header__logo {
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    background-image: url('../imagenes/logopan.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 75rem;
+  }
+  .header__logos {
+    display: inline-flex;
+    height: 75px;
+    width: 100px;
+    background-image: url('../imagenes/logopan.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 75rem;
+   
+  }
+  
+.center_header {
+    background: url(../imagenes/header.jpg) no-repeat top center;
+    padding: 2em 0;
+}
+
+.center_header .title2 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0.3em 0 0 0;
+}
+
+/*menu opciones*/
+.ul {
+  width: 100%;
+  float: right;
+  text-align:right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color:white;
+
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/*estilos de la informacion*/
+
+.main_cls {
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+.title {
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+
+/*footer*/
+.grid_footer {
+  background-color: black;
+  color: white;
+  grid-column: 1 / span 2;
+  text-align: center;
+  margin: 5px;
+  padding: 15px;
+}
